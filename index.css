@@ -1,0 +1,373 @@
+/* GENERELT *//* GENERELT *//* GENERELT *//* GENERELT *//* GENERELT *//* GENERELT */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;}
+
+body {
+    overflow-x: hidden;
+    background-color: #bbd1f9;}
+
+/* TYPOGRAFI */
+.climate-crisis {
+  font-family: "Climate Crisis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:"YEAR" 1979;}
+
+.metrophobic-regular {
+  font-family: "Metrophobic", sans-serif;
+  font-weight: 400;
+  font-style: normal;}
+
+p {
+  font-family: "Metrophobic", sans-serif;
+  font-size: 20px;
+  line-height: 1.6;}
+
+h1 {
+  font-family: "Climate Crisis", sans-serif;
+  font-size: 60px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px; /*Jeg har justeret mellemrummet mellem bogstaverne (kerning) i overskrifterne 
+  fordi fonten er ret tung og kunne være svær at læse/skimme. Det lille mellemrum gør, at bogstaverne flyder 
+  lidt mere frit, og gør teksten nemmere at overskue. Der var ikke mulighed for at bruge en lavere font-weight.*/}
+
+/* NAVIGATION + LOGO *//* NAVIGATION + LOGO *//* NAVIGATION + LOGO *//* NAVIGATION + LOGO *//* NAVIGATION + LOGO */
+header {
+  background-color: #262d33;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: "Metrophobic", sans-serif;
+  color: #d5e1f8;
+  transition: color 0.25s;
+}
+
+nav a:hover {
+  color: green;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 70px;
+  position: relative;
+}
+
+.nav-left,
+  .nav-right {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.logo {
+  position: absolute;
+  text-align: center;
+  line-height: 0.9;
+  padding-top: 170px;
+  color: #cedfff;
+}
+
+.de {
+  font-family: "Climate Crisis", sans-serif;
+  font-size: 96px;
+  width: 100px;
+}
+
+.neergaard {
+  font-family: "Climate Crisis", sans-serif;
+  font-size: 100px;
+  width: 500px;
+}
+  
+/* BANNER (SECTION 1) *//* BANNER (SECTION 1) *//* BANNER (SECTION 1) *//* BANNER (SECTION 1) *//* BANNER (SECTION 1) */
+.hero img {
+  width: 92%;
+  margin: auto;
+  height: 900px;
+  display: block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+
+.hero {
+  background-color: #262d33;
+}
+  
+/* INTRODUKTION (SECTION 2) *//* INTRODUKTION (SECTION 2) *//* INTRODUKTION (SECTION 2) *//* INTRODUKTION (SECTION 2) */
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem 70px; /*SKAL ÆNDRES*/
+  gap: 4rem; /*SKAL ÆNDRES*/
+  background-color: #e1e3e6;
+}
+
+.text {
+  flex: 1;
+  color: #262d33;
+}
+
+.intro .portrait img {
+  max-width: 300px;
+  border-radius: 15px;
+}
+  
+ /* MINE VÆRKER (SECTION 3) */ /* MINE VÆRKER (SECTION 3) */ /* MINE VÆRKER (SECTION 3) */ /* MINE VÆRKER (SECTION 3) */
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem 50px;
+  gap: 2rem;
+  height: 920px;
+  background-color: #262d33;}
+
+.works .image img {
+  width: 260px;
+  border-radius: 5px;
+  height: auto;
+  object-fit: cover;
+  margin-left: 15px;
+  margin-bottom: 15px;}
+
+#projektertext {
+  width: 600px;
+  color: #e1e3e6;
+  padding-top: 30px;}
+
+#mine_projekter {
+  color: #e1e3e6;}
+
+/*KNAP*//*KNAP*//*KNAP*//*KNAP*//*KNAP*//*KNAP*//*KNAP*//*KNAP*//*KNAP*//*KNAP*//*KNAP*//*KNAP*//*KNAP*//*KNAP*//*KNAP*/
+button {
+  height: 50px;
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+  background-color: #bbd1f9;
+  color: #262d33;
+  margin-top: 60px;
+  font-size: 20px;
+  font-family: "Metrophobic", sans-serif;
+  transition: background-color 0.25s, color 0.25s;}
+
+button:hover {
+  background-color: #e1e3e6;
+  color: #262d33;}
+
+/* BILLEDER AF PROJEKTER*//* BILLEDER AF PROJEKTER*//* BILLEDER AF PROJEKTER*//* BILLEDER AF PROJEKTER*//* BILLEDER AF PROJEKTER*/
+#image_container {
+  display: grid;
+  grid-template-rows: 2;
+  grid-template-columns: 3;
+  grid-template-areas: 
+  'en to tre'
+  'fire fem seks';
+}
+
+#item1 {grid-area: en;}
+#item2 {grid-area: to;}
+#item3 {grid-area: tre;}
+#item4 {grid-area: fire;}
+#item5 {grid-area: fem;}
+#item6 {grid-area: seks;}
+
+footer {
+  background-color: #e1e3e6;
+  width: 100%;
+  height: 400px;}
+
+/* SKALERING*//* SKALERING*//* SKALERING*//* SKALERING*//* SKALERING*//* SKALERING*//* SKALERING*//* SKALERING*//* SKALERING*//* SKALERING*/
+@media screen and (max-width: 599px) {
+  .logo {
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    line-height: 0.9;
+    /*padding-top: 110px;*/
+  }
+
+  .de {font-size: 30px;}
+  .neergaard {font-size: 50px;}
+
+  .hero img {
+    width: 92%;
+    margin: auto;
+    height: 300px;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+  }
+
+  .nav-left,
+    .nav-right {
+    display: flex;
+    gap: 25px;
+    font-weight: 600;
+    font-size: 15px;
+    padding-left: 5px;
+  }
+      
+  h1 {font-size: 30px;}
+
+  p {font-size: 15px;}
+
+  .intro {
+    flex-direction: column;
+    padding: 30px 20px;
+    align-items: center;
+    gap: 30px;
+  }
+    
+  .text {
+    flex: unset;
+    text-align: left;
+  }
+    
+  .introheadline {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+  .introtext {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .portrait img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+  .works {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  #image_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 2rem;
+  }
+
+  .works .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 0;
+  }
+
+  .textworks {
+    text-align: center;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  #projektertext {
+    width: 100%;
+  }
+
+  #mine_projekter {
+    font-size: 30px;
+  }
+
+  .textworks button {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+@media screen and (min-width: 600px) {
+  .logo {
+    /*position: absolute;*/
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    line-height: 0.9;
+    padding-top: 110px;}
+
+.de {
+    font-size: 60px;}
+
+.neergaard {
+    font-size: 100px;}
+}
+
+
+@media screen and (min-width: 960px) {
+  .logo {
+    /*position: absolute;*/
+    text-align: center;
+    line-height: 0.9;
+    /*padding-top: 170px;*/
+}
+
+.de {font-size: 96px;}
+.neergaard {font-size: 180px;}
+
+
+}
+
+
+
+
+
+/*UNDERSIDE - mine værker *//*UNDERSIDE - mine værker *//*UNDERSIDE - mine værker *//*UNDERSIDE - mine værker *//*UNDERSIDE - mine værker *//*UNDERSIDE - mine værker */
+.de_underside {
+  font-family: "Climate Crisis", sans-serif;
+  font-size: 50px;}
+
+.neergaard_underside {
+  font-size: 80px;
+  font-family: "Climate Crisis", sans-serif;}
+
+.logo_underside {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  line-height: 0.9;
+  padding-top: 50px;
+  color: #262d33;}
+
+.header_underside {
+  background-color: #cedfff;
+  padding-top: 10px;
+  padding-bottom: 10px;}
+
+.nav_link_underside {
+  color: #262d33;
+}
+
+.vaerker_body {
+  background-color: #cedfff;
+}
+
+#main_vaerker {
+  background-color: #f9f7f5;
+  width: 92%;
+  margin: auto;
+  border-radius: 10px;
+  height: 1800px;
+  color: #798079;
+  padding-left: 40px;
+  padding-top: 80px;
+}
