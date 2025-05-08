@@ -6,7 +6,7 @@
 
 body {
     overflow-x: hidden;
-    background-color: #bbd1f9;}
+    background-color: #b6ff99;}
 
 /* TYPOGRAFI */
 .climate-crisis {
@@ -37,7 +37,7 @@ h1 {
 
 /* NAVIGATION + LOGO *//* NAVIGATION + LOGO *//* NAVIGATION + LOGO *//* NAVIGATION + LOGO *//* NAVIGATION + LOGO */
 header {
-  background-color: #262d33;
+  background-color: #0d0d0d;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -45,12 +45,12 @@ header {
 nav a {
   text-decoration: none;
   font-family: "Metrophobic", sans-serif;
-  color: #d5e1f8;
+  color: #027bff;
   transition: color 0.25s;
 }
 
 nav a:hover {
-  color: green;
+  color: aqua;
 }
 
 .navbar {
@@ -59,6 +59,11 @@ nav a:hover {
   align-items: center;
   padding: 30px 70px;
   position: relative;
+  z-index: 2;
+}
+
+#space {
+  width: 1000px;
 }
 
 .nav-left,
@@ -71,21 +76,24 @@ nav a:hover {
 .logo {
   position: absolute;
   text-align: center;
+  left: 50%;
+    transform: translateX(-50%);
   line-height: 0.9;
-  padding-top: 170px;
-  color: #cedfff;
+  padding-top: 175px;
+  color: #027bff;
+  z-index: -1;
 }
 
 .de {
   font-family: "Climate Crisis", sans-serif;
-  font-size: 96px;
-  width: 100px;
+  font-size: 80px;
+
 }
 
 .neergaard {
   font-family: "Climate Crisis", sans-serif;
-  font-size: 100px;
-  width: 500px;
+  font-size: 180px;
+
 }
   
 /* BANNER (SECTION 1) *//* BANNER (SECTION 1) *//* BANNER (SECTION 1) *//* BANNER (SECTION 1) *//* BANNER (SECTION 1) */
@@ -100,7 +108,7 @@ nav a:hover {
 }
 
 .hero {
-  background-color: #262d33;
+  background-color: #0d0d0d;
 }
   
 /* INTRODUKTION (SECTION 2) *//* INTRODUKTION (SECTION 2) *//* INTRODUKTION (SECTION 2) *//* INTRODUKTION (SECTION 2) */
@@ -193,7 +201,7 @@ footer {
     left: 50%;
     text-align: center;
     line-height: 0.9;
-    /*padding-top: 110px;*/
+    padding-top: 110px;
   }
 
   .de {font-size: 30px;}
@@ -294,10 +302,10 @@ footer {
 
 
 
-
+/*
 @media screen and (min-width: 600px) {
   .logo {
-    /*position: absolute;*/
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -310,22 +318,13 @@ footer {
 .neergaard {
     font-size: 100px;}
 }
+*/
 
-
+/*
 @media screen and (min-width: 960px) {
-  .logo {
-    /*position: absolute;*/
-    text-align: center;
-    line-height: 0.9;
-    /*padding-top: 170px;*/
-}
-
-.de {font-size: 96px;}
-.neergaard {font-size: 180px;}
-
 
 }
-
+*/
 
 
 
@@ -342,7 +341,6 @@ footer {
 .logo_underside {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
   text-align: center;
   line-height: 0.9;
   padding-top: 50px;
