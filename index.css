@@ -6,7 +6,7 @@
 
 body {
     overflow-x: hidden;
-    background-color: #b6ff99;}
+    background-color: #ffa8d2;}
 
 /* TYPOGRAFI */
 .climate-crisis {
@@ -37,7 +37,7 @@ h1 {
 
 /* NAVIGATION + LOGO *//* NAVIGATION + LOGO *//* NAVIGATION + LOGO *//* NAVIGATION + LOGO *//* NAVIGATION + LOGO */
 header {
-  background-color: #0d0d0d;
+  background-color: #262d33;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -45,31 +45,32 @@ header {
 nav a {
   text-decoration: none;
   font-family: "Metrophobic", sans-serif;
-  color: #027bff;
+  color: #ffa8d2;
   transition: color 0.25s;
 }
 
 nav a:hover {
-  color: aqua;
+  text-decoration: underline;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 70px;
+  padding: 25px 50px;
   position: relative;
   z-index: 2;
 }
 
+/*
 #space {
   width: 1000px;
-}
+}*/
 
 .nav-left,
   .nav-right {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   font-size: 20px;
 }
 
@@ -77,10 +78,10 @@ nav a:hover {
   position: absolute;
   text-align: center;
   left: 50%;
-    transform: translateX(-50%);
+  transform: translateX(-50%);
   line-height: 0.9;
   padding-top: 175px;
-  color: #027bff;
+  color: #de5e9c;
   z-index: -1;
 }
 
@@ -92,13 +93,13 @@ nav a:hover {
 
 .neergaard {
   font-family: "Climate Crisis", sans-serif;
-  font-size: 180px;
+  font-size: 182px;
 
 }
   
 /* BANNER (SECTION 1) *//* BANNER (SECTION 1) *//* BANNER (SECTION 1) *//* BANNER (SECTION 1) *//* BANNER (SECTION 1) */
 .hero img {
-  width: 92%;
+  width: 94%;
   margin: auto;
   height: 900px;
   display: block;
@@ -108,14 +109,14 @@ nav a:hover {
 }
 
 .hero {
-  background-color: #0d0d0d;
+  background-color: #262d33;
 }
   
 /* INTRODUKTION (SECTION 2) *//* INTRODUKTION (SECTION 2) *//* INTRODUKTION (SECTION 2) *//* INTRODUKTION (SECTION 2) */
 .intro {
   display: flex;
   flex-wrap: wrap;
-  padding: 4rem 70px; /*SKAL ÆNDRES*/
+  padding: 4rem 50px; /*SKAL ÆNDRES*/
   gap: 4rem; /*SKAL ÆNDRES*/
   background-color: #e1e3e6;
 }
@@ -134,7 +135,7 @@ nav a:hover {
 .works {
   display: flex;
   flex-wrap: wrap;
-  padding: 4rem 50px;
+  padding: 4rem 35px;
   gap: 2rem;
   height: 920px;
   background-color: #262d33;}
@@ -161,15 +162,15 @@ button {
   width: 300px;
   border: none;
   border-radius: 5px;
-  background-color: #bbd1f9;
-  color: #262d33;
+  background-color: #de5e9c;
+  color: #e1e3e6;
   margin-top: 60px;
   font-size: 20px;
   font-family: "Metrophobic", sans-serif;
   transition: background-color 0.25s, color 0.25s;}
 
 button:hover {
-  background-color: #e1e3e6;
+  background-color: #ffa8d2;
   color: #262d33;}
 
 /* BILLEDER AF PROJEKTER*//* BILLEDER AF PROJEKTER*//* BILLEDER AF PROJEKTER*//* BILLEDER AF PROJEKTER*//* BILLEDER AF PROJEKTER*/
@@ -193,6 +194,12 @@ footer {
   background-color: #e1e3e6;
   width: 100%;
   height: 400px;}
+
+#phone_number, #email, #adress {
+  display: inline-block;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
 
 /* SKALERING*//* SKALERING*//* SKALERING*//* SKALERING*//* SKALERING*//* SKALERING*//* SKALERING*//* SKALERING*//* SKALERING*//* SKALERING*/
 @media screen and (max-width: 599px) {
@@ -341,31 +348,53 @@ footer {
 .logo_underside {
   position: absolute;
   left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   line-height: 0.9;
   padding-top: 50px;
-  color: #262d33;}
+  color: #ffa8d2;}
 
 .header_underside {
-  background-color: #cedfff;
+  background-color: #de5e9c;
   padding-top: 10px;
   padding-bottom: 10px;}
 
 .nav_link_underside {
-  color: #262d33;
+  color: #e1e3e6;
 }
 
-.vaerker_body {
-  background-color: #cedfff;
+.body_underside {
+  background-color: #de5e9c;
 }
 
-#main_vaerker {
+#main_underside {
   background-color: #f9f7f5;
-  width: 92%;
+  width: 94%;
   margin: auto;
   border-radius: 10px;
-  height: 1800px;
+  height: 900px;
   color: #798079;
   padding-left: 40px;
   padding-top: 80px;
 }
+
+#contact_portrait {
+  width: 500px;
+  border-radius: 5px;
+}
+
+#main_underside {
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: 
+  'contact_info portrait';
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 120px;
+  color: #262d33;
+  
+}
+
+#contact_info {grid-area: contact_info;}
+#contact_portrait {grid-area: portrait;}
