@@ -10,73 +10,60 @@
         <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Metrophobic&display=swap" rel="stylesheet">
     </head>
     <body>
-      
-      <!--<header>
+
+      <header class="header__index">
         <nav class="navbar">
-          <a href="#galleri">Galleri</a>
-          <a href="#something-else">Something else</a>
-          <div id="space"></div>
-          <a href="#om-mig" class="right">Om mig</a>
-          <a href="#kontakt" class="right">Kontakt</a>
-        </nav>
-        <div class="logo">
-          <span class="de">de</span>
-          <span class="neergaard">NEERGAARD</span>
-        </div>
-      </header>-->
-      <header>
-        <nav class="navbar">
-          <div class="nav-left">
-            <a href="myprojects.html" id="my_projects">My projects</a>
-            <a href="myskills.html" id="my_skills">My skills</a>
+          <div class="navbar__left">
+            <a href="myprojects.html" class="navbar__link">My projects</a>
+            <a href="myskills.html" class="navbar__link">My skills</a>
           </div>
 
-          <div class="logo">
-            <span class="de">de</span>
+          <div class="navbar__logo">
+            <span class="navbar__logo--de">de</span>
             <br>
-            <span class="neergaard">NEERGAARD</span>
+            <span class="navbar__logo--neergaard">NEERGAARD</span>
           </div>
 
-          <div class="nav-right">
-            <a href="aboutme.html" id="about_me">About me</a>
-            <a href="contact.html" id="contact">Contact</a>
+          <div class="navbar__right">
+            <a href="aboutme.html" class="navbar__link">About me</a>
+            <a href="contact.html" class="navbar__link">Contact</a>
           </div>
         </nav>
       </header>
 
 
         <main>
-          <section class="hero">
-            <img src="images/banner.jpg" alt="Picture of woman with sunglasses">
-          </section>
-          <section class="intro">
-            <div class="text">
-                <h1 class="introheadline">MULTIMEDIA DESIGNER WITH <br> A PASSION FOR</h1>
-                <br>
-                <p class="introtext">I’m a multimedia designer who loves playing with contrast — between minimalism and nostalgia, polish and personality. My style often draws inspiration from the early 2000s and late ’90s — not just in colors or styling, but in attitude. I’m fascinated by the way visual identity can feel both familiar and fresh at the same time.
-                  <br><br>
-                  I focus on creating aesthetics that are bold in concept, clean in execution, and full of intention. Whether I’m working with layout, animation, or image composition, I care deeply about atmosphere — the kind that makes something feel just right, even when it’s a little unexpected. I’m especially drawn to creative direction that uses strong visuals to say something soft — or uses simplicity to deliver a punch.
-                  <br><br>
-                  I like visuals that aren’t afraid to be a little exaggerated, a little nostalgic, or a little different — as long as they’re clear in their message and true to their mood.</p>
-                  
-            </div>
-            <div class="portrait">
-                <img src="portrait-icon.jpg" alt="Billede af mig">
-            </div>
+          <section class="banner">
+            <img class="banner__image" src="Finished pictures/modeller-kopi 2.jpg" alt="Picture of woman with sunglasses">
           </section>
 
+          <section class="intro">
+            <div class="intro__text">
+                <h1 class="intro__headline">MULTIMEDIA DESIGNER WITH <br> A PASSION FOR</h1>
+                <br>
+                <p class="intro__paragraph">I’m a multimedia designer who loves playing with contrast — between minimalism and nostalgia, polish and personality. My style often draws inspiration from the early 2000s and late ’90s — not just in colors or styling, but in attitude. I’m fascinated by the way visual identity can feel both familiar and fresh at the same time.
+                <br><br>
+                I focus on creating aesthetics that are bold in concept, clean in execution, and full of intention. Whether I’m working with layout, animation, or image composition, I care deeply about atmosphere — the kind that makes something feel just right, even when it’s a little unexpected. I’m especially drawn to creative direction that uses strong visuals to say something soft — or uses simplicity to deliver a punch.
+                <br><br>
+                I like visuals that aren’t afraid to be a little exaggerated, a little nostalgic, or a little different — as long as they’re clear in their message and true to their mood.</p>   
+            </div> 
+            <div class="intro__portrait">
+                <img class="intro__portrait--image" src="me.jpg" alt="Billede af mig">
+            </div>
+          </section>
+          
           <section class="works">
-            <div class="image" id="image_container">
-              <img src="images/with_grain/image_photoshootgrain.jpg" alt="Close-up billede af kvinde med solbriller" id="item1">
-              <img src="images/with_grain/image_photoshootgrain-24.jpg" alt="Billede af kvinde, der ligger på gulet med solbriller på" id="item2">
-              <img src="images/with_grain/image_photoshootgrain-27.jpg" alt="Billede af taske" id="item3">
-              <img src="images/with_grain/image_photoshootgrain-23.jpg" alt="Billede af kvinde med solbriller" id="item4">
-              <img src="images/with_grain/image_photoshootgrain-22.jpg" alt="Billede af taske" id="item5">
+            <div class="image__container">
+              <img src="Finished pictures/modeller-2.jpg" alt="Close-up billede af kvinde med solbriller" id="item1">
+              <img src="Finished pictures/modeller-3.jpg" alt="Billede af kvinde, der ligger på gulet med solbriller på" id="item2">
+              <img src="Finished pictures/modeller-4.jpg" alt="Billede af taske" id="item3">
+              <img src="Finished pictures/modeller-5.jpg" alt="Billede af kvinde med solbriller" id="item4">
+              <img src="Finished pictures/modeller.jpg" alt="Billede af taske" id="item5">
               <img src="images/with_grain/image_photoshootgrain-2.jpg" alt="Billede af kvinde med solbriller og hat" id="item6">
             </div>
-            <div class="textworks">
-              <h1 id="mine_projekter">MY PROJECTS</h1>
-              <p id="projektertext">My work explores how visual storytelling can feel refined without losing character. I often experiment with nostalgic references — Y2K energy, dreamy lighting, offbeat poses, or unexpected crops — and combine them with clean compositions and neutral tones. It’s about finding beauty in the details while staying sharp in the overall direction.
+            <div>
+              <h1 class="myprojects__heading--index">MY PROJECTS</h1>
+              <p class="myprojects__paragraph">My work explores how visual storytelling can feel refined without losing character. I often experiment with nostalgic references — Y2K energy, dreamy lighting, offbeat poses, or unexpected crops — and combine them with clean compositions and neutral tones. It’s about finding beauty in the details while staying sharp in the overall direction.
                 <br><br>
                 Each project is an opportunity to build a small universe — where the styling, rhythm, and tone all work together. I enjoy shaping images that are aesthetically strong but also have a certain feeling behind them: a bit of fun, attitude, or elegance. Whether the focus is a product, a mood, or a brand, I aim to create visuals that are not just beautiful — but distinctive and memorable.</p>
               <a href="myprojects.html"><button>Click here for more details!</button></a>
