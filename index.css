@@ -2,10 +2,13 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;}
+  padding: 0;
+}
+
 body {
     overflow-x: hidden;
-    background-color: #403e33;}
+    background-color: #403e33;
+  }
 
 /*TYPOGRAFI*/
 .climate-crisis {
@@ -13,46 +16,62 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:"YEAR" 1979;}
+  font-variation-settings:"YEAR" 1979;
+}
+
 .metrophobic-regular {
   font-family: "Metrophobic", sans-serif;
   font-weight: 400;
-  font-style: normal;}
+  font-style: normal;
+}
+
 p {
   font-family: "Metrophobic", sans-serif;
   font-size: 20px;
-  line-height: 1.6;}
+  line-height: 1.6;
+}
+
 h1 {
   font-family: "Metrophobic", sans-serif;
   font-size: 60px;
   line-height: 1.1;
   font-weight: 900;
-  margin-bottom: 20px;}
+  margin-bottom: 20px;
+}
 
 /* HEADER, NAVIGATION + LOGO*/
 .header__index {
   background-color: #403e33;
   padding-top: 10px;
-  padding-bottom: 10px;}
+  padding-bottom: 10px;
+}
 
 .navbar__link {
-  text-decoration: none;
   font-family: "Metrophobic", sans-serif;
   color: #F0EEE8;
-  transition: color 0.25s;}
+  transition: color 0.25s;
+}
+
 .navbar__link:hover {text-decoration: underline;}
+
+a {text-decoration: none;}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 25px 50px;
   position: relative;
-  z-index: 2;}
+  z-index: 2; /*Brugte ChatGPT til at løse, at mit logo var for stort og man ikke kunne bruge navbaren. Promt kan ses i bilag XXX*/
+}
+
 .navbar__left,
   .navbar__right {
   display: flex;
   gap: 30px;
-  font-size: 20px;}
+  font-size: 20px;
+}
+
 .navbar__logo {
   position: absolute;
   text-align: center;
@@ -61,15 +80,20 @@ h1 {
   line-height: 0.9;
   padding-top: 175px;
   color: #B4AFA1;
-  z-index: -1;}
+  z-index: -1; /*Brugte ChatGPT til at løse, at mit logo var for stort og man ikke kunne bruge navbaren. Promt kan ses i bilag XXX*/
+}
+
 .navbar__logo--de {
   font-family: "Climate Crisis", sans-serif;
-  font-size: 80px;}
+  font-size: 80px;
+}
+
 .navbar__logo--neergaard {
   font-family: "Climate Crisis", sans-serif;
-  font-size: 182px;}
+  font-size: 180px;
+}
   
-/*BANNER (SECTION 1)*/
+/*INDEX - BANNER*/
 .banner__image {
   width: 94%;
   margin: auto;
@@ -77,50 +101,57 @@ h1 {
   display: block;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  object-fit: cover;}
-.banner {
-  background-color: #403e33;}
+  object-fit: cover;
+}
+
+.banner {background-color: #403e33;}
   
-/*INTRODUCTION (SECTION 2)*/
+/*INDEX - INTRODUCTION*/
 .intro {
   display: flex;
   flex-wrap: wrap;
-  padding: 4rem 50px; /*SKAL ÆNDRES*/
-  gap: 4rem; /*SKAL ÆNDRES*/
+  padding: 50px;
+  gap: 50px;
   background-color: #F5CFDE;
-  height: 700px;}
+  height: 700px;
+}
+
 .intro__text {
   flex: 1;
-  color: #403e33;}
+  color: #403e33;
+}
+
 .intro__portrait--image {
   max-width: 350px;
   height: 450px;
   border-radius: 10px;
-  object-fit: cover;}
+  object-fit: cover;
+}
   
- /*MY PROJECTS (SECTION 3)*/ 
-.works /*denne class er ikke skrevet med BEM, da det ikke virker, hvis jeg gør. Jeg har forsøgt med forskellige class-navne, for at sikre at det ikke er fordi noget overskriver, men det virker stadig ikke*/{
+ /*INDEX - MY PROJECTS*/ 
+.works /*denne class er ikke skrevet med BEM, da det ikke virker, hvis jeg gør. Jeg har forsøgt med forskellige class-navne, for at sikre at det ikke er fordi at noget overskriver, men det virker stadig ikke*/{
   display: flex;
   flex-wrap: wrap;
-  padding: 4rem 35px;
-  gap: 2rem;
+  padding: 40px;
+  gap: 40px;
   height: 920px;
-  background-color: #B4AFA1;}
-.works img {
+  background-color: #B4AFA1;
+}
+
+.works img, #item2, #item5 {
   width: 260px;
   border-radius: 10px;
   height: 380px;
   object-fit: cover;
   margin-left: 15px;
-  margin-bottom: 15px;}
+  margin-bottom: 15px;
+}
 
 .myprojects__paragraph, .myprojects__heading--index {
   width: 700px;
   color: #403e33;
-  padding-top: 30px;}
-
-/*#myprojects__heading {
-  color: #403e33;}*/
+  padding-top: 30px;
+}
 
 .image__container {
   display: grid;
@@ -147,23 +178,57 @@ button {
   margin-top: 60px;
   font-size: 20px;
   font-family: "Metrophobic", sans-serif;
-  transition: background-color 0.25s, color 0.25s;}
+  transition: background-color 0.25s, color 0.25s;
+}
+
 button:hover {
   background-color: #ffa8d2;
-  color: #F0EEE8;}
+  color: #F0EEE8;
+}
 
 footer {
   background-color: #403e33;
   width: 100%;
-  height: 400px;}
+  height: 300px;
+  color: #F0EEE8;
+}
+
+.footer__title {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.footer__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.footer__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.footer__text {
+  margin: 0;
+  font-size: 15px;
+}
 
 /*UNDERSIDER GENERELT*/
 .navbar__logounderside--de {
   font-family: "Climate Crisis", sans-serif;
-  font-size: 40px;}
+  font-size: 40px;
+}
+
 .navbar__logounderside--neergaard {
+  font-family: "Climate Crisis", sans-serif;
   font-size: 70px;
-  font-family: "Climate Crisis", sans-serif;}
+}
+
 .navbar__logo--underside {
   position: absolute;
   left: 50%;
@@ -171,16 +236,16 @@ footer {
   text-align: center;
   line-height: 0.9;
   padding-top: 50px;
-  color: #403e33;}
+  color: #403e33;
+}
+
 .header__underside {
   background-color: #B4AFA1;
   padding-top: 10px;
-  padding-bottom: 10px;}
+  padding-bottom: 10px;
+}
 
-/*.nav_link_underside {
-  color: #403e33;}*/
-.body__underside {
-  background-color: #B4AFA1;}
+.body__underside {background-color: #B4AFA1;}
 
 .main__underside {
   background-color: #F0EEE8;
@@ -188,7 +253,8 @@ footer {
   margin: auto;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  height: 900px;}
+  height: auto;
+}
 
 /*INDIKATIONER PÅ HVOR MAN ER I NAV PÅ DE ENKELTE UNDERSIDER*/
 .navbar__link--contact {text-decoration: underline;}
@@ -206,18 +272,27 @@ footer {
   padding-left: 80px;
   padding-right: 80px;
   padding-top: 120px;
-  color: #262d33;}
+  color: #262d33;
+}
+
 .contact__info--portrait {
-  width: 500px;
+  width: 400px;
   border-radius: 10px;
-  grid-area: portrait;}
+  grid-area: portrait;
+}
+
 .contact__info--text {grid-area: contact_info;}
+
 .contact__info--paragraph {padding-bottom: 50px;}
+
 .contact__info--heading {padding-bottom: 20px;}
-.phone_number, .email, .adress {
-  display: inline-block;
-  padding-left: 10px;
-  padding-bottom: 10px;}
+
+.contact__icon {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
 
 /*UNDERSIDE - MY SKILLS*/
 .myskills__cards--container {
@@ -225,24 +300,33 @@ footer {
   margin: auto;
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;}
+  margin-top: 20px;
+}
+
 .myskills__card {
   width: 30%;
   height: 600px;
   background-color: #F5CFDE;
-  border-radius: 10px;}
+  border-radius: 10px;
+}
+
 .myskills__heading {
   text-align: center;
-  padding-top: 100px;}
+  padding-top: 20px;
+}
+
 .skills__logo {
   width: 300px;
   display: block;
   margin: auto;
-  padding-top: 50px;}
+  padding-top: 50px;
+}
+
 .skills__text {
   padding-top: 40px;
   margin-left: 50px;
-  margin-right: 50px; /*margin: auto; virker ikke her, derfor er de sat individuelt*/}
+  margin-right: 50px; /*margin: auto; gider ikke virke her, derfor er de sat individuelt*/
+}
 
 /*UNDERSIDE - MY PROJECTS*/
 .main__underside--projects {
@@ -251,7 +335,8 @@ footer {
   margin: auto;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  height: 2300px;}
+  height: 2350px;
+}
 
 .myprojects__cards--container {
   display: grid;
@@ -274,21 +359,29 @@ footer {
   padding-top: 40px;
   margin-left: 50px;
   margin-right: 50px;
-  color: #262d33;}
+  color: #403e33;
+}
 
-.myprojects__card--image {
+.myprojects__card--image, .myprojects__card--video {
   width: 100%;
-  height: 300px;
+  height: 350px;
   object-fit: cover;
   border-radius: 10px;
-  margin-top: 60px;}
+}
+
+.myprojects__text > h2 {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
 
 .myprojects__text {
-  padding-top: 30px;
+  padding-bottom: 50px;
 }
+
 .myprojects__heading {
   text-align: center;
   padding-top: 100px;
+  margin-bottom: 60px;
 }
 
 /*UNDERSIDE - ABOUT ME*/
@@ -296,186 +389,194 @@ footer {
   width: 200px;
 }
 
-/*SKALERING*//* SKALERING*//* SKALERING*//* SKALERING*//* SKALERING*//* SKALERING*//* SKALERING*//* SKALERING*//* SKALERING*//* SKALERING*/
-@media screen and (max-width: 1024px) {
-  /* HEADER, NAVIGATION + LOGO*/
-.header__index {
-  background-color: #403e33;
-  padding-top: 5px;
-  padding-bottom: 5px;}
-
-.navbar__link {
-  text-decoration: none;
-  font-family: "Metrophobic", sans-serif;
-  color: #F0EEE8;
-  transition: color 0.25s;}
-
-.navbar__link:hover {text-decoration: underline;}
-
-.navbar {
+.main__underside {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 30px;
-  position: relative;
-  z-index: 2;}
-
-.navbar__left,
-  .navbar__right {
-  display: flex;
-  gap: 30px;
-  font-size: 20px;}
-
-.navbar__logo {
-  position: absolute;
-  text-align: center;
-  left: 50%;
-  transform: translateX(-50%);
-  line-height: 0.9;
-  padding-top: 95px;
-  color: #B4AFA1;
-  z-index: -1;}
-
-.navbar__logo--de {
-  font-family: "Climate Crisis", sans-serif;
-  font-size: 60px;}
-
-.navbar__logo--neergaard {
-  font-family: "Climate Crisis", sans-serif;
-  font-size: 110px;}
-  
-/*BANNER (SECTION 1)*/
-.banner__image {
-  width: 94%;
-  margin: auto;
-  height: 900px;
-  display: block;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  object-fit: cover;}
-.banner {
-  background-color: #403e33;}
-  
-/*INTRODUCTION (SECTION 2)*/
-.intro {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 4rem 50px; /*SKAL ÆNDRES*/
-  gap: 4rem; /*SKAL ÆNDRES*/
-  background-color: #F5CFDE;
-  height: 1050px;}
-
-.intro__text {
-  flex: 1;
-  color: #403e33;}
-
-.intro__portrait--image {
-  max-width: 350px;
-  height: 450px;
-  border-radius: 10px;
-  object-fit: cover;}
-  
- /*MY PROJECTS (SECTION 3)*/ 
-.works {
-  flex-direction: column;
-  height: auto;
-  padding: 2rem 20px;
-  align-items: center;
-}
-
-.image__container {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  align-items: flex-start;
+  gap: 50px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #f0eee8;
+  flex-wrap: wrap;
 }
 
-.works img {
+.aboutme__blok {
+  flex: 1;
+  max-width: 400px;
+  text-align: center;
+  color: #403e33;
+  background-color: #F5CFDE;
+  height: 636px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.aboutme__portrait {
   width: 100%;
   max-width: 300px;
-  height: auto;
-  margin: 0;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 30px;
+  margin-top: 50px;
 }
 
-.myprojects__heading--index,
-.myprojects__paragraph {
-  width: 100%;
-  max-width: 700px;
-  padding: 1rem 0;
-  text-align: center;
+.aboutme__blok h1 {font-size: 45px;}
+
+.aboutme__info--text {
+  flex: 2;
+  max-width: 900px;
+  color: #403e33;
+  margin-top: 65px;
 }
 
-button {
-  margin: 2rem auto 0 auto;
-  display: block;
-}
+.aboutme__info--text h1 {font-size: 40px;}
 
-a {text-decoration: none;}
+/*SKALERING - MELLEM SKÆRM*/
+/*Jeg har brugt ChatGPT til at rydde lidt op i mine media queries for at undgå dublikeringer og unødig kode. Jeg har lavet mine media queries først og fået den til at fjerne det unødvendige. Promt kan ses i bilag XXX*/
+@media screen and (max-width: 1024px) {
+  .header__index {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 
-footer {
-  background-color: #403e33;
-  width: 100%;
-  height: 400px;}
-}
+  .navbar {
+    padding: 25px 30px;
+  }
 
-@media screen and (max-width: 599px) {
+  .navbar__logo {
+    padding-top: 95px;
+  }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 15px;
-  position: relative;
-  z-index: 2;}
+  .navbar__logo--de {
+    font-size: 60px;
+  }
 
-.navbar__left,
-  .navbar__right {
-  display: flex;
-  gap: 20px;
-  font-size: 15px;}
+  .navbar__logo--neergaard {
+    font-size: 110px;
+  }
 
-.navbar__logo {
-  position: absolute;
-  text-align: center;
-  left: 50%;
-  transform: translateX(-50%);
-  line-height: 0.9;
-  padding-top: 95px;
-  color: #B4AFA1;
-  z-index: -1;}
-
-.navbar__logo--de {
-  font-family: "Climate Crisis", sans-serif;
-  font-size: 30px;}
-
-.navbar__logo--neergaard {
-  font-family: "Climate Crisis", sans-serif;
-  font-size: 64px;}
-  
-/*BANNER (SECTION 1)*/
-.banner__image {
-  width: 94%;
-  margin: auto;
-  height: 400px;
-  display: block;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  object-fit: cover;}
-
-.banner {
-  background-color: #403e33;}
   .intro {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 4rem 50px; /*SKAL ÆNDRES*/
-  gap: 4rem; /*SKAL ÆNDRES*/
-  background-color: #F5CFDE;
-  height: 1050px;}
+    height: auto;
+  }
 
- .intro {
+  .works {
     flex-direction: column;
-    padding: 2rem 20px;
-    gap: 2rem;
+    height: auto;
+    padding: 30px 20px;
+    align-items: center;
+  }
+
+  .image__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .works img, #item2, #item5 {
+    max-width: 300px;
+    height: auto;
+    margin: 0;
+  }
+
+  .myprojects__heading--index,
+  .myprojects__paragraph {
+    width: 100%;
+    max-width: 700px;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  button {
+    margin: 32px auto 0 auto;
+    display: block;
+  }
+
+  .main__underside {
+    height: 1200px;
+  }
+
+  .navbar__logounderside--de {
+    font-size: 25px;
+    z-index: -1;
+  }
+
+  .navbar__logounderside--neergaard {
+    font-size: 50px;
+    z-index: -1;
+  }
+
+  .main__underside--projects {
+    height: auto;
+  }
+
+  .myprojects__card {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .myprojects__card--image,
+  .myprojects__card--video {
+    height: 250px;
+  }
+
+  .myskills__cards--container {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 30px;
+  }
+
+  .myskills__card {
+    width: 45%;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .skills__logo {
+    width: 200px;
+    padding-top: 30px;
+  }
+
+  .skills__text {
+    padding-top: 30px;
+    margin: 0 30px;
+  }
+
+  .contact__info--portrait {
+    height: 400px;
+    width: 300px;
+    margin-left: 40px;
+    object-fit: cover;
+  }
+}
+
+/*SKALERING - LILLE SKÆRM */
+/*Jeg har brugt ChatGPT til at rydde lidt op i mine media queries for at undgå dublikeringer og unødig kode. Jeg har lavet mine media queries først og fået den til at fjerne det unødvendige. Promt kan ses i bilag XXX*/
+@media screen and (max-width: 599px) {
+  .navbar {
+    padding: 20px 15px;
+  }
+
+  .navbar__left,
+  .navbar__right {
+    gap: 20px;
+    font-size: 15px;
+  }
+
+  .navbar__logo--de {
+    font-size: 30px;
+  }
+
+  .navbar__logo--neergaard {
+    font-size: 60px;
+  }
+
+  .intro {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
     height: auto;
     align-items: center;
     text-align: left;
@@ -493,47 +594,95 @@ footer {
   }
 
   .intro__headline {
-    font-size: 24px;
+    font-size: 25px;
     line-height: 1.4;
   }
 
   .intro__paragraph {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.6;
   }
 
   .works {
     flex-direction: column;
-    padding: 2rem 20px;
-    gap: 2rem;
+    padding: 30px 20px;
+    gap: 30px;
     height: auto;
   }
 
   .image__container {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     justify-items: center;
   }
 
-  .works img {
-    width: 100%;
+  .works img, #item2, #item5 {
     max-width: 160px;
     height: 220px;
-    margin: 0;
   }
 
   .myprojects__paragraph,
   .myprojects__heading--index {
-    width: 100%;
     text-align: left;
     padding-top: 10px;
   }
 
   button {
-    width: 100%;
     max-width: 260px;
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 30px;
+  }
+
+  footer {
+    height: 400px;
+  }
+
+  .myprojects__cards--container {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 32px;
+  }
+
+  .myprojects__card {
+    width: 100%;
+    margin: 0;
+  }
+
+  .main__underside--projects {
+    height: auto;
+  }
+
+  .myskills__cards--container {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 16px;
+  }
+
+  .myskills__card {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 16px;
+  }
+
+  .skills__logo {
+    width: 150px;
+    margin: 0 16px 0 0;
+  }
+
+  .skills__text {
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact__info--portrait {
+    height: 200px;
+    width: 150px;
+    margin-left: 40px;
+    object-fit: cover;
   }
 }
