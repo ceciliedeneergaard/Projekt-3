@@ -62,7 +62,7 @@ a {text-decoration: none;}
   align-items: center;
   padding: 25px 50px;
   position: relative;
-  z-index: 2; /*Brugte ChatGPT til at løse, at mit logo var for stort og man ikke kunne bruge navbaren. Promt kan ses i bilag 1*/
+  z-index: 2; /*Havde problemer med at mit logo lå ovenpå navbaren. Fandt løsning her: https://www.w3schools.com/cssref/pr_pos_z-index.php*/
 }
 
 .navbar__left,
@@ -72,7 +72,7 @@ a {text-decoration: none;}
   font-size: 20px;
 }
 
-.navbar__logo { /*Jeg har brugt ChatGPT til at få logoet til at se ud som i min prototype i Figma. Promt kan ses i bilag 2*/
+.navbar__logo { /*Jeg har brugt ChatGPT til at få logoet til at se ud som i min prototype i Figma. Promt kan ses i bilag 1 i 'P3 AI Bilag'*/
   position: absolute;
   text-align: center;
   left: 50%;
@@ -80,7 +80,7 @@ a {text-decoration: none;}
   line-height: 0.9;
   padding-top: 175px;
   color: #B4AFA1;
-  z-index: -1; /*Brugte ChatGPT til at løse, at mit logo var for stort og man ikke kunne bruge navbaren. Promt kan ses i bilag 1*/
+  z-index: -1; /*Havde problemer med at mit logo lå ovenpå navbaren. Fandt løsning her: https://www.w3schools.com/cssref/pr_pos_z-index.php*/
 }
 
 .navbar__logo--de {
@@ -370,7 +370,7 @@ footer {
 .myprojects__card--image, .myprojects__card--video {
   width: 100%;
   height: 350px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 10px;
 }
 
@@ -437,7 +437,6 @@ footer {
 .aboutme__info--text h1 {font-size: 40px;}
 
 /*SKALERING - MELLEM SKÆRM*/
-/*Jeg har brugt ChatGPT til at rydde lidt op i mine media queries for at undgå dublikeringer og unødig kode. Jeg har lavet mine media queries først og fået den til at fjerne det unødvendige. Promt kan ses i bilag 3*/
 @media screen and (max-width: 1024px) {
   .header__index {
     padding-top: 5px;
@@ -558,7 +557,6 @@ footer {
 }
 
 /*SKALERING - LILLE SKÆRM */
-/*Jeg har brugt ChatGPT til at rydde lidt op i mine media queries for at undgå dublikeringer og unødig kode. Jeg har lavet mine media queries først og fået den til at fjerne det unødvendige. Promt kan ses i bilag 3*/
 @media screen and (max-width: 599px) {
   .navbar {
     padding: 20px 15px;
@@ -616,7 +614,7 @@ footer {
   }
 
   .image__container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
     justify-items: center;
   }
