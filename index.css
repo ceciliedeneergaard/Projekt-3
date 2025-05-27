@@ -1,4 +1,4 @@
-/* GENERELT *//* GENERELT *//* GENERELT *//* GENERELT *//* GENERELT *//* GENERELT */
+/*GENERELT*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,7 +13,7 @@ body {
 /*TYPOGRAFI*/
 .climate-crisis {
   font-family: "Climate Crisis", sans-serif;
-  font-optical-sizing: auto;
+  /*font-optical-sizing: auto;*/
   font-weight: 400;
   font-style: normal;
   font-variation-settings:"YEAR" 1979;
@@ -62,7 +62,7 @@ a {text-decoration: none;}
   align-items: center;
   padding: 25px 50px;
   position: relative;
-  z-index: 2; /*Brugte ChatGPT til at løse, at mit logo var for stort og man ikke kunne bruge navbaren. Promt kan ses i bilag XXX*/
+  z-index: 2; /*Brugte ChatGPT til at løse, at mit logo var for stort og man ikke kunne bruge navbaren. Promt kan ses i bilag 1*/
 }
 
 .navbar__left,
@@ -72,7 +72,7 @@ a {text-decoration: none;}
   font-size: 20px;
 }
 
-.navbar__logo {
+.navbar__logo { /*Jeg har brugt ChatGPT til at få logoet til at se ud som i min prototype i Figma. Promt kan ses i bilag 2*/
   position: absolute;
   text-align: center;
   left: 50%;
@@ -80,7 +80,7 @@ a {text-decoration: none;}
   line-height: 0.9;
   padding-top: 175px;
   color: #B4AFA1;
-  z-index: -1; /*Brugte ChatGPT til at løse, at mit logo var for stort og man ikke kunne bruge navbaren. Promt kan ses i bilag XXX*/
+  z-index: -1; /*Brugte ChatGPT til at løse, at mit logo var for stort og man ikke kunne bruge navbaren. Promt kan ses i bilag 1*/
 }
 
 .navbar__logo--de {
@@ -153,10 +153,15 @@ a {text-decoration: none;}
   padding-top: 30px;
 }
 
+.myprojects__heading--index, .intro__headline {
+  font-family: "Metrophobic", sans-serif;
+  font-size: 50px;
+}
+
 .image__container {
   display: grid;
-  grid-template-rows: 2;
-  grid-template-columns: 3;
+  /*grid-template-rows: 2;
+  grid-template-columns: 3;*/
   grid-template-areas: 
   'en to tre'
   'fire fem seks';}
@@ -265,7 +270,7 @@ footer {
 /*UNDERSIDE - CONTACT*/
 .contact__info {
   display: grid;
-  grid-template-rows: 1;
+  /*grid-template-rows: 1;*/
   grid-template-columns: 2fr 1fr;
   grid-template-areas: 
   'contact_info portrait';
@@ -432,7 +437,7 @@ footer {
 .aboutme__info--text h1 {font-size: 40px;}
 
 /*SKALERING - MELLEM SKÆRM*/
-/*Jeg har brugt ChatGPT til at rydde lidt op i mine media queries for at undgå dublikeringer og unødig kode. Jeg har lavet mine media queries først og fået den til at fjerne det unødvendige. Promt kan ses i bilag XXX*/
+/*Jeg har brugt ChatGPT til at rydde lidt op i mine media queries for at undgå dublikeringer og unødig kode. Jeg har lavet mine media queries først og fået den til at fjerne det unødvendige. Promt kan ses i bilag 3*/
 @media screen and (max-width: 1024px) {
   .header__index {
     padding-top: 5px;
@@ -553,7 +558,7 @@ footer {
 }
 
 /*SKALERING - LILLE SKÆRM */
-/*Jeg har brugt ChatGPT til at rydde lidt op i mine media queries for at undgå dublikeringer og unødig kode. Jeg har lavet mine media queries først og fået den til at fjerne det unødvendige. Promt kan ses i bilag XXX*/
+/*Jeg har brugt ChatGPT til at rydde lidt op i mine media queries for at undgå dublikeringer og unødig kode. Jeg har lavet mine media queries først og fået den til at fjerne det unødvendige. Promt kan ses i bilag 3*/
 @media screen and (max-width: 599px) {
   .navbar {
     padding: 20px 15px;
